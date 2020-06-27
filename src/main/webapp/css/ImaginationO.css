@@ -1,0 +1,159 @@
+body{
+	background-color: #f9f9f9;
+}
+.Image-header .innovation{
+	margin-top: 8px;
+	margin-left: 20px;
+}
+nav .navbar-list>li:hover{
+	background-color: #dcdcdc;
+}
+nav .navbar li{
+	padding-left: 20px;
+}
+.carousel-picture{
+	margin: 0 auto 10px;
+}
+.carousel-picture .carousel-slide{
+	box-shadow: none;
+	background-color: none;
+	
+}
+.Image-container{
+	padding-top: 10px;
+}
+.carousel-picture .carousel-slide>item>img{
+	border-radius: 5px;
+}
+.ranking-list{
+	margin: 0 auto 10px;
+}
+.ranking-list .Image-ranking-list{
+	box-shadow: none;
+	background-color: none;
+	padding: 5px 10px;
+	/* border: 1px solid #efefef; */
+}
+.Image-ranking-list>a>span{
+	border-radius: 1.5625rem;
+}
+.Image-form-search{
+	margin: 0 auto 10px;
+}
+.Image-form-search .Image-input-search{
+	    box-shadow: none;
+	    background-color: #fff;
+	    padding: 5px 10px;
+	    border: 1px solid #efefef;
+}
+.Image-searchform{
+	padding: 5px 10px;
+}
+.Image-form-search .Image-btn-search{
+		border: 1px solid #dc1ae2;
+	    background-color: #c238ef;
+	    color: #fff;
+}
+.side-bar-card{
+	
+	background: rgba(0,0,0,.06);
+	padding: 10px 0;
+	border-radius: 2px;
+}
+
+.side-bar-recommend{
+	margin-top: 10px;
+}
+.side-bar-card .side-bar-title {
+	font-size: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.side-bar-recommend .side-bar-list .side-bar-item{
+    padding: 5px 15px;
+}
+
+.side-bar-recommend .side-bar-list .side-bar-item:hover{
+    padding: 5px 15px;
+    background-color: rgba(0,0,0, .09);
+}
+
+.side-bar-recommend .side-bar-list .side-item-title{
+    color: black;
+}
+
+.side-bar-recommend .side-bar-list .side-item-title:hover{
+    color: #9d9d9d;
+}
+
+
+.side-bar-recommend .side-bar-list .side-item-info{
+    color: #9d9d9d;
+    font-size: 8px;
+}
+a{
+	color: #BDBDBD;
+}
+a:hover{
+	text-decoration: none;
+	color: #e6c9e5;
+}
+.media-list{
+	margin-top: 20px;
+}
+.media{
+	margin-left:10px;
+	border: 1px solid #E3E3E3;
+	border-radius: 2px;
+}
+.media-list .media .innovation-img{ 
+	width:20%; 
+	height: 150px;
+}
+.media-list .media .innovation-title{
+	margin: 5px 10px;
+}
+.media-list .media .innovation-title a{
+	text-decoration: none;
+	font-size: 25px;
+}
+.media-list .media .innovation-info{
+	margin: 5px 10px;
+}
+
+.media-list .media .innovation-info>span>img{
+	width:18px; 
+	height:18px;
+}
+.media-list .media .innovation-content{
+	margin: 5px 10px;
+}
+.media-list .media .innovation-img>a>img{
+	  width:100%;
+	  height:140px;
+	  border-radius: 5px; 
+	  margin-left: 5px;
+}
+.media-body .innovation-tag{
+	margin: 5px 10px;
+	font-size: 12px;
+}
+.media-body .innovation-tag>span>a{
+	    margin-right: .5em;
+	    padding: 2px 4px;
+	    border-radius: 2px;
+	    background: #ccc;
+	    color: #fff;
+	    -webkit-transition: background .3s;
+	    -moz-transition: background .3s;
+	    transition: background .3s;
+}
+.media-body .innovation-tag>span>a:hover{
+	background: #e6c9e5;
+	text-decoration: none;
+}
+
+
+
+
+

@@ -1,0 +1,76 @@
+html{
+	height: 100%;
+}
+body{
+	margin: 40px;
+	padding: 0;
+	background-image: linear-gradient(to bottom right,rgb(118,76,163),rgb(74, 83, 170));
+ } 
+ .wrapper {
+	padding: 10px;
+	margin: 0 auto;
+	/* background-color: rgb(115, 105, 105); */
+	width: 300px;
+	box-shadow: 0 10px 50px 0px rgb(63, 68, 58);
+	display: grid;
+	border-radius: 10px;
+	grid-template-columns: repeat(1, 300px);
+	grid-gap: 15px;
+ }
+ .wrapper .box {
+	 margin: 0 auto;
+ 	/* background-color: #8395d5; */
+ 	color: #fff;
+ 	border-radius: 5px;
+ 	padding: 0;
+ /* 	order: 1; */
+  }
+  
+ .wrapper .box img{
+	 width: 150px;
+	 height: 150px;
+	 margin: 0 75px;
+	 border-radius: 80px;
+ }
+.wrapper .box .turn{
+	 margin: 0 auto;
+	 width: 70px;
+	 padding: 10px;
+	 /* background: #9e8c80; */
+	 color: #3e45a6;
+	 text-align: center;
+	 /* box-shadow: 0 10px 30px agba(0,0,0,1); */
+	 border-radius: 5px;
+	 overflow: hidden;
+ }
+ .wrapper .box .turn label{
+	 position: relative;
+	 cursor: pointer;
+ }
+ .wrapper .box .turn label input{
+	 display: none;
+ }
+ .wrapper .box .turn label span{
+	 position: relative;
+	 padding: 5px;
+	 width: 70px;
+	 background: #848484;
+	 border: 2px solid #838383;
+	 color: #444;
+	 border-radius: 4px;
+ }
+ .wrapper .box .turn label input:checked ~ span{
+	 color: #fff;
+	 
+	 border: 2px solid #fff;
+	 /* box-shadow: 0 10px 50px 0px rgb(45, 49, 238); */
+ }
+ 
+ .wrapper .box .Sqldata{
+	 /* background-color: #0CB4CE; */
+	 color: gray;
+	 margin: 0.3125rem 65px;
+ }
+.wrapper .box .Sqldata:hover{
+	color: #fff;
+}

@@ -1,0 +1,107 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<script>
+	$(document).ready(function() {
+		$(function(){
+			var user_mac='参数1';
+			$.ajax({
+				url:'/mqtttest/SportServlet',
+				type:'Get',
+				async:true,
+				data:{user_mac:user_mac},
+				dataType:'json',
+				success:function(data){
+					var item;
+					$.each(data,function(i,jsonArray){
+						alert(i)
+						item = "<tr id='btnClick' onclick='suggestion(this)'>"
+						+"<td >"+jsonArray['user_mac']+"</td>"
+						+"<td >"+jsonArray['createtime']+"</td>"
+						+"<td >"+jsonArray['temp']+"</td>"
+						+"<td >"+jsonArray['hr']+"</td>"
+						+"</tr>";
+						$('.test').append(item);
+					})
+				},
+				error:function(data){
+					console.log(data);
+				}
+			});
+		});
+		
+	
+		/* 
+		$(document).on(“click”, “#site_add”, function() {
+});
+		
+		$(document).on("click","#btnClick",function(){
+			var tr = obj.parenNode;
+			alert(tr)
+		})*/
+		$(document).on("click","#btnClick",function(){
+			
+			alert("hello ")
+		});
+		
+	});
+	function suggestion(obj){
+		var tr=obj;
+		var hr = tr.cells[3].innerHTML;
+		var min = 60;
+		var max = 100;
+		if(hr<min){
+			alert("你的心率过低，可能需要做个检查！！！");
+		}else if(hr>min && hr<max){
+			alert("你目前的心率："+hr +"你的心率处于正常频率，请放心！！！")
+		}else if(hr<150)
+		{
+			alert("你目前的心率："+hr +"你的心率过快，请休息一下！！！")
+		}else{
+			alert("fsdfsdfs")
+		}
+		
+		/* var tb = document.getElementById('table');    // table 的 id
+		var rows = tb.rows;                           // 获取表格所有行
+		for(var i = 0; i<rows.length; i++ ){
+		   for(var j = 0; j<rows[i].cells.length; j++ ){    // 遍历该行的 td
+		       alert("第"+(i+1)+"行，第"+(j+1)+"个td的值："+rows[i].cells[j].innerHTML+"。");           // 输出每个td的内容
+		   }
+		}  */
+	
+		
+	}
+	
+	
+</script>
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<table id="table" class="table table-hover">
+		     <thead>
+		        <tr id="btnClick">
+		           <th>user_mac</th>
+		           <th>createtime</th>
+				   <th>temp</th>
+				   <th>hr</th>
+		        </tr>
+		     </thead>
+		     <tbody class="test">
+		   
+		     </tbody>
+		</table>
+	</div>
+	
+</div>
+
+</body>
+</html>
